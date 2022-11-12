@@ -12,19 +12,19 @@ section {
 }
 
 section h2 {
-  font-size: 4em;
+  font-size: 4rem;
   color: #4b656d;
 }
 
 section h2 span {
   display: block;
-  font-size: 0.5em;
+  font-size: 0.5rem;
   color: #ff4983;
 }
 
 section p {
   margin-top: 20px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 /* preloader section*/
@@ -46,7 +46,7 @@ section p {
   top: 3%;
   left: 1%;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
@@ -56,10 +56,10 @@ section p {
   content: 'Portofolio @2022';
   white-space: pre;
   position: absolute;
-  top: 8%;
+  top: 9%;
   left: 1%;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
@@ -75,18 +75,18 @@ section p {
 .counter {
   position: relative;
   top: 35%;
-  left: 35%;
+  left: 33%;
   color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 100;
-  font-size: 16em;
+  font-size: 12rem;
   font-size: 700;
   z-index: 1;
 }
 
 .counter::after {
   content: '%';
-  font-size: 0.5em;
+  font-size: 5.5rem;
 }
 
 .hide {
