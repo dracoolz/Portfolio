@@ -73,9 +73,9 @@ section p {
 
 /* counter section */
 .counter {
-  position: relative;
-  top: 35%;
-  left: 35%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
   color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 100;
