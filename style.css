@@ -74,13 +74,13 @@ section p {
 /* counter section */
 .counter {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
   color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 100;
   font-size: 12rem;
-  font-size: 700;
+  font-size: 600;
   z-index: 1;
 }
 
