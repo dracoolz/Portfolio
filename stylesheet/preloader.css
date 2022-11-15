@@ -59,6 +59,7 @@
 .counter::after {
   content: '%';
   font-size: 5.5rem;
+  margin-right: 2vw;
 }
 
 .hide {
