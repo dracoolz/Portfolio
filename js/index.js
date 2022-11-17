@@ -4,6 +4,8 @@ window.onload = function () {
   setTimeout(mainTitle, 6200)
   setTimeout(blackBar, 6500)
   setTimeout(navurlSection, 6530)
+  setTimeout(bottomLeftRight, 7700)
+  setTimeout(animationHead, 7700)
 }
 //Div will appeare after 1 sec the window is loaded fully
 function navbarSection() {
@@ -37,4 +39,15 @@ function navurlSection() {
   document.getElementById('contact').style.display = "block";
   document.querySelector('.navurl .build').style.animation = "slide-up 2.5s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.navurl .build').style.display = "block";
+}
+
+function bottomLeftRight() {
+  document.querySelector('.navfoot .footer-left').style.animation = "slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.navfoot .footer-left').style.display = "block";
+  document.querySelector('.navfoot .footer-right').style.animation = "slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.navfoot .footer-right').style.display = "block";
+}
+
+function animationHead() {
+  document.querySelector('iframe').style.animation = "slide-up-head 1s cubic-bezier(0.65, 0, 0.35, 1) both";
 }

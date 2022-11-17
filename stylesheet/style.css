@@ -142,25 +142,41 @@ h1 {
 
 /* footer */
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
-  right: 0;
-  margin-right: 2%;
 }
 
-.navfoot {
+iframe {
+  pointer-events: none;
+  opacity: 0;
+}
+
+ul.navfoot {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin-top: 7.1rem;
+  padding-left: 6.5%;
+  padding-right: 10.5%;
   list-style-type: none;
+  overflow: hidden;
 }
 
-.navfoot li h2 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 6rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 1.6;
+.navfoot .animated-head {
+  padding-right: 2.3%;
+  opacity: 0;
+}
+
+.navfoot .footer-left,
+.navfoot .footer-right {
+  text-align: center;
+  display: none;
+}
+
+.navfoot li {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
 }
 
 /* animation */
@@ -170,6 +186,17 @@ footer {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes slide-up-head {
+  0% {
+    transform: translateY(100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
