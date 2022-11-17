@@ -2,6 +2,7 @@
 window.onload = function () {
   setTimeout(navbarSection, 5500);
   setTimeout(mainTitle, 6200)
+  setTimeout(blackToWhite, 6900)
   setTimeout(blackBar, 6500)
   setTimeout(navurlSection, 6530)
   setTimeout(bottomLeftRight, 7700)
@@ -20,9 +21,14 @@ function navbarSection() {
 
 function mainTitle() {
   document.querySelector('.title1 h1').style.animation = "slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both";
-  document.querySelector('.title1 h1').style.display = "inline";
+  document.querySelector('.title1 h1').style.display = "block";
   document.querySelector('.title2 h1').style.animation = "slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.title2 h1').style.display = "block";
+}
+
+function blackToWhite() {
+  document.querySelector('.title1 h1').style.display = "inline";
+  document.querySelector('.title1 h1').style.animation = "black-to-white 1s ease-in both";
 }
 
 function blackBar() {
