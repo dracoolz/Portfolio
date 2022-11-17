@@ -148,7 +148,7 @@ footer {
 
 iframe {
   pointer-events: none;
-  opacity: 0;
+  visibility: hidden;
 }
 
 ul.navfoot {
@@ -165,7 +165,6 @@ ul.navfoot {
 
 .navfoot .animated-head {
   padding-right: 2.3%;
-  opacity: 0;
 }
 
 .navfoot .footer-left,
@@ -202,13 +201,11 @@ ul.navfoot {
 
 @keyframes scale-in-ver-center {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
     opacity: 1;
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
     opacity: 1;
   }
 }

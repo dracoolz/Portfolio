@@ -49,5 +49,6 @@ function bottomLeftRight() {
 }
 
 function animationHead() {
-  document.querySelector('iframe').style.animation = "slide-up-head 1s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.navfoot .animated-head').style.animation = "scale-in-ver-center 0.5s ease-in both";
+  document.querySelector('iframe').style.visibility = "visible";
 }
