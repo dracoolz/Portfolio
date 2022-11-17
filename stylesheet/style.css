@@ -24,6 +24,11 @@ header {
   position: fixed;
   top: 1.3rem;
   width: 100%;
+  overflow: hidden;
+}
+
+.navbar .home {
+  display: none;
 }
 
 .navbar .home a {
@@ -47,10 +52,12 @@ header {
 
 .navbar .indonesia {
   margin-left: 2%;
+  display: none;
 }
 
 .navbar .porto {
   margin-right: 2%;
+  display: none;
 }
 
 /* main section */
@@ -73,19 +80,25 @@ h1 {
   overflow: hidden;
 }
 
-.outside-bar {
-  background-color: black;
-}
-
 .navurl {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-content: center;
+  width: 100%;
   margin-top: 5%;
   padding: 2% 0;
   list-style-type: none;
+  background-color: black;
   padding-left: 2%;
   padding-right: 2%;
+  overflow: hidden;
+}
+
+.navurl #work,
+.navurl #about,
+.navurl #contact,
+.navurl .build {
+  display: none;
 }
 
 .navurl li {
@@ -157,5 +170,18 @@ footer {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
   }
 }
