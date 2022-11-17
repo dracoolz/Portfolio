@@ -19,8 +19,9 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 49.5rem;
   position: fixed;
   top: 1.3rem;
   width: 100%;
@@ -72,6 +73,7 @@ h1 {
   line-height: 120px;
   font-weight: 600;
   margin-left: 2%;
+  padding-right: 0.5rem;
   display: none;
   /* animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both; */
 }
@@ -153,12 +155,11 @@ iframe {
 
 ul.navfoot {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 15rem;
   width: 100%;
   margin-top: 7.1rem;
-  padding-left: 6.5%;
-  padding-right: 10.5%;
   list-style-type: none;
   overflow: hidden;
 }

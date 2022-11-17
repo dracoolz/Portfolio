@@ -20,7 +20,7 @@ function navbarSection() {
 
 function mainTitle() {
   document.querySelector('.title1 h1').style.animation = "slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both";
-  document.querySelector('.title1 h1').style.display = "block";
+  document.querySelector('.title1 h1').style.display = "inline";
   document.querySelector('.title2 h1').style.animation = "slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.title2 h1').style.display = "block";
 }
