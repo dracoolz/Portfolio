@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 49.5rem;
+  gap: 41.5%;
   position: fixed;
   top: 1.3rem;
   width: 100%;
@@ -157,7 +157,7 @@ ul.navfoot {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15rem;
+  gap: 14%;
   width: 100%;
   margin-top: 7.1rem;
   list-style-type: none;
@@ -195,7 +195,7 @@ ul.navfoot {
     color: none;
   }
   100% {
-    background-color: black;
+    background-color: #252525;
     color: white;
   }
 }

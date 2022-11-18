@@ -1,10 +1,10 @@
 //css after preload
 window.onload = function () {
-  setTimeout(navbarSection, 5500);
+  setTimeout(navbarSection, 5000);
   setTimeout(mainTitle, 6200)
   setTimeout(blackToWhite, 6900)
   setTimeout(blackBar, 6500)
-  setTimeout(navurlSection, 6530)
+  setTimeout(navurlSection, 6520)
   setTimeout(bottomLeftRight, 7700)
   setTimeout(animationHead, 7700)
 }
@@ -27,8 +27,8 @@ function mainTitle() {
 }
 
 function blackToWhite() {
-  document.querySelector('.title1 h1').style.display = "inline";
   document.querySelector('.title1 h1').style.animation = "black-to-white 1s ease-in both";
+  document.querySelector('.title1 h1').style.display = "inline";
 }
 
 function blackBar() {
