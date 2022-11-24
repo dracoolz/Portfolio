@@ -12,8 +12,8 @@ body {
   background-color: #e5e5e5;
 }
 
-/* header section */
-header {
+/* === header section === */
+.header {
   z-index: 1;
 }
 
@@ -61,24 +61,29 @@ header {
   display: none;
 }
 
-/* main section */
-main {
+/* === main section === */
+.main {
   position: relative;
   top: 7rem;
 }
 
 h1 {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 7rem;
+  font-size: 8rem;
   line-height: 120px;
   font-weight: 600;
+  font-style: italic;
   margin-left: 2%;
   padding-right: 0.5rem;
   display: none;
-  /* animation: slide-up 0.9s cubic-bezier(0.65, 0, 0.35, 1) both; */
 }
 
-.title1, .title2 {
+.title1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  padding-bottom: 2%;
   overflow: hidden;
 }
 
@@ -118,24 +123,6 @@ h1 {
   text-decoration: none;
 }
 
-.navurl li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 250ms ease-in;
-}
-
-.navurl li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
 .navurl .build p {
   font-family: 'Oswald', sans-serif;
   font-weight: 200;
@@ -143,40 +130,88 @@ h1 {
 }
 
 /* footer */
-footer {
-  position: relative;
-  bottom: 0;
-}
-
-iframe {
-  pointer-events: none;
-  visibility: hidden;
-}
-
-ul.navfoot {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 14%;
+  margin-top: 15rem;
+}
+
+.footer > ul.navfoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
   width: 100%;
-  margin-top: 7.1rem;
   list-style-type: none;
   overflow: hidden;
 }
 
-.navfoot .animated-head {
-  padding-right: 2.3%;
-}
-
-.navfoot .footer-left,
-.navfoot .footer-right {
+.navfoot .footer-one,
+.navfoot .footer-two {
   text-align: center;
   display: none;
 }
 
-.navfoot li {
+.navfoot .footer-two img {
+    transform: rotate(-0.25turn);
+}
+
+.navfoot > li {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2rem;
+}
+
+/* === showroom section === */
+.showroom {
+  width: 100%;
+  margin: 2em auto;
+  columns: 4;
+  column-gap: 40px;
+}
+
+.showroom .box {
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  break-inside: avoid;
+}
+
+.showroom .box img {
+  max-width: 100%;
+}
+
+.showroom .box p {
+  padding: 0 0 10px;
+  font-size: 1rem;
+}
+
+/* === responsive === */
+/* 1200px */
+@media (max-width: 1200px) {
+  .showroom {
+    columns: 3;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    padding: 20px 20px 20px 0;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .showroom {
+    columns: 2;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .showroom {
+    columns: 1;
+  }
 }
 
 /* animation */
@@ -190,33 +225,31 @@ ul.navfoot {
 }
 
 @keyframes opacity-slide-up {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+    }
   }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
-@keyframes black-to-white {
-  0% {
-    background-color: #e5e5e5;
-    color: none;
+@keyframes title-slide-up {
+    0% {
+      transform: translateY(180px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  100% {
-    background-color: black;
-    color: white;
-  }
-}
 
 @keyframes slide-up-head {
   0% {
     transform: translateY(100px);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
@@ -233,4 +266,25 @@ ul.navfoot {
     transform: scaleY(1);
     opacity: 1;
   }
+}
+
+/* ==== scrollbar ==== */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #878787 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #878787;
+  border-radius: 5px;
+  border: 3px solid #ffffff;
 }
