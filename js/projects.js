@@ -53,7 +53,7 @@ function showRoomItems() {
 // // === paralax effect ===
 const hiddenBox = document.querySelectorAll('.hidden');
 const appearOption = { 
-  threshold: 1
+  threshold: 0.5
 };
 
 const Observer = new IntersectionObserver((entries) => {

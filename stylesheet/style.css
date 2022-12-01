@@ -10,6 +10,7 @@
 
 body {
   background-color: #e5e5e5;
+  overflow: hidden;
 }
 
 /* header section */
@@ -65,6 +66,7 @@ header {
 main {
   position: relative;
   top: 7rem;
+  margin-top: 1.2rem;
 }
 
 h1 {
@@ -183,6 +185,15 @@ ul.navfoot {
 @keyframes slide-up {
   0% {
     transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes title-slide-up {
+  0% {
+    transform: translateY(180px);
   }
   100% {
     transform: translateY(0);

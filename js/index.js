@@ -2,8 +2,8 @@
 window.onload = function () {
   setTimeout(navbarSection, 5300);
   setTimeout(mainTitle, 6200)
+  setTimeout(blackBar, 6780)
   setTimeout(blackToWhite, 6900)
-  setTimeout(blackBar, 6500)
   setTimeout(navurlSection, 6520)
   setTimeout(bottomLeftRight, 7700)
   setTimeout(animationHead, 7700)
@@ -20,9 +20,9 @@ function navbarSection() {
 }
 
 function mainTitle() {
-  document.querySelector('.title1 h1').style.animation = "slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.title1 h1').style.animation = "title-slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.title1 h1').style.display = "block";
-  document.querySelector('.title2 h1').style.animation = "slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.title2 h1').style.animation = "title-slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.title2 h1').style.display = "block";
 }
 

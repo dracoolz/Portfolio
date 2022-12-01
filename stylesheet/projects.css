@@ -329,4 +329,5 @@ h3 {
 *::-webkit-scrollbar-thumb {
   background-color: #878787;
   border-radius: 5px;
+  overflow: auto;
 }
