@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
+
+@font-face {
+    font-family: "icomoon";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?3qkin2");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.eot?#iefix3qkin2") format("embedded-opentype"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.woff?3qkin2") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.ttf?3qkin2") format("truetype"), url("fhttps://s3-us-west-2.amazonaws.com/s.cdpn.io/93/icomoon.svg?3qkin2#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 * {
   margin: 0;
   padding: 0;
@@ -149,17 +158,13 @@ h1 {
 
 /* footer */
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15rem;
+  margin-top: 17rem;
 }
 
 .footer > ul.navfoot {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   gap: 130px;
   width: 100%;
   list-style-type: none;
@@ -167,13 +172,11 @@ h1 {
 }
 
 .navfoot .footer-one,
-.navfoot .footer-two {
-  text-align: center;
+.navfoot .footer-two,
+.navfoot .footer-three,
+.navfoot .footer-four {
+  opacity: 0;
   display: none;
-}
-
-.navfoot .footer-two img {
-    transform: rotate(-0.25turn);
 }
 
 .navfoot > li {
@@ -181,69 +184,112 @@ h1 {
   font-size: 2rem;
 }
 
-/* === showroom section === */
-h3 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+.footer .social-networks {
+  margin: 0 0 35px;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
 }
 
-.showroom {
+.footer .social-networks li {
+  display: inline-block;
+}
+
+.footer .social-networks a {
+  display: block;
+  position: relative;
+  margin: 0 7px;
+  width: 68px;
+  height: 68px;
+  font-size: 0;
+  line-height: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.footer .social-networks a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 100%;
-  margin: 2em auto;
-  columns: 4;
-  column-gap: 40px;
-  opacity: 0;
+  height: 100%;
+  margin-top: -50%;
+  margin-left: -50%;
+  border-radius: 100px;
+  background-color: black;
+  transition: all 400ms;
 }
 
-.showroom .box {
-  width: 100%;
-  margin: 0 0 20px;
-  padding: 10px;
-  background-color: #e5e5e5;
-  overflow: hidden;
-  break-inside: avoid;
+.footer .social-networks a:after {
+  position: relative;
+  display: block;
+  font-family: "icomoon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 26px;
+  line-height: 77px;
 }
 
-.showroom .box img {
-  max-width: 100%;
+.footer .social-networks a:hover, 
+.footer .social-networks a:focus {
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.showroom .box .showroomTitle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.footer .social-networks .icon-linkedin:after {
+  content: url("../icons/linkedin2.png");
 }
 
-.showroom .box .showroomTitle p {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 200;
+.footer .social-networks .icon-linkedin:hover:before, 
+.footer .social-networks .icon-linkedin:focus:before {
+  background: #0077b5;
+}
+
+.footer .social-networks .icon-github:after {
+  content: url("../icons/github.png");
+}
+
+.footer .social-networks .icon-github:hover:before, 
+.footer .social-networks .icon-github:focus:before {
+  background: #8c92ac;
+}
+
+.footer .social-networks .icon-instagram:after {
+  content: url("../icons/instagram.png");
+}
+
+.footer .social-networks .icon-instagram:hover:before, 
+.footer .social-networks .icon-instagram:focus:before {
+  background: linear-gradient(45deg, blue, transparent), radial-gradient(red, transparent);
+}
+
+.footer .social-networks .icon-gmail:after {
+  content: url("../icons/envelop.png");
+}
+
+.footer .social-networks .icon-gmail:hover:before, 
+.footer .social-networks .icon-gmail:focus:before {
+  background: #cc2127;
 }
 
 /* === responsive === */
 /* 1200px */
 @media (max-width: 1200px) {
-  .showroom {
-    columns: 3;
-    width: calc(100% - 40px);
-    box-sizing: border-box;
-    padding: 20px 20px 20px 0;
-  }
+  
 }
 
 /* 768px */
 @media (max-width: 768px) {
-  .showroom {
-    columns: 2;
-  }
+  
 }
 
 /* 480px */
 @media (max-width: 480px) {
-  .showroom {
-    columns: 1;
-  }
+  
 }
 
 /* animation */
@@ -298,20 +344,4 @@ h3 {
     transform: scaleY(1);
     opacity: 1;
   }
-}
-
-/* paralax effect */
-/* showroom */
-.hidden {
-  opacity: 0;
-  transition: opacity 0.25s ease-in;
-}
-
-.show {
-  opacity: 1;
-}
-
-/* ==== scrollbar ==== */
-*::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
 }
