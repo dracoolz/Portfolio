@@ -1,0 +1,69 @@
+/* preloader section*/
+.preloader {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #070707;
+    z-index: 9999;
+  }
+  
+  .preloader::before {
+    content: '#002';
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .preloader::after {
+    content: 'About';
+    white-space: pre;
+    position: absolute;
+    top: 9%;
+    left: 1%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .active {
+    transform: translateY(-100vh);
+    transition: ease-in-out 2s;
+    transition-delay: 1s;
+  }
+  
+  /* counter section */
+  .counter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    background-color: #070707;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12rem;
+    font-size: 600;
+    z-index: 1;
+  }
+  
+  .counter::after {
+    content: '%';
+    font-size: 5.5rem;
+    margin-right: 2vw;
+  }
+  
+  .hide {
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+  }

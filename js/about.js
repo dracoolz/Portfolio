@@ -5,7 +5,6 @@ window.onload = function () {
   setTimeout(blackBar, 6500);
   setTimeout(navurlSection, 6520);
   setTimeout(bottomText, 7700);
-  setTimeout(showRoomItems, 8000);
 }
 //Div will appeare after 1 sec the window is loaded fully
 function navbarSection() {
@@ -45,25 +44,3 @@ function bottomText() {
   document.querySelector('.navfoot .footer-two').style.animation = "slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.navfoot .footer-two').style.display = "block";
 }
-
-function showRoomItems() {
-  document.querySelector('.showroom').style.opacity = 1;
-}
-
-// // === paralax effect ===
-const hiddenBox = document.querySelectorAll('.hidden');
-const appearOption = { 
-  threshold: 0.5
-};
-
-const Observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show');
-    }
-  })
-}, appearOption);
-
-hiddenBox.forEach(el => Observer.observe(el));
