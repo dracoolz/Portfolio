@@ -50,7 +50,7 @@ function showRoomItems() {
   document.querySelector('.showroom').style.opacity = 1;
 }
 
-// // === paralax effect ===
+// === paralax effect ===
 const hiddenBox = document.querySelectorAll('.hidden');
 const appearOption = { 
   threshold: 0.5

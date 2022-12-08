@@ -44,3 +44,40 @@ function bottomText() {
   document.querySelector('.navfoot .footer-two').style.animation = "slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.navfoot .footer-two').style.display = "block";
 }
+
+if(!!window.IntersectionObserver){
+  let n=1;
+  const options = {
+    threshold: 1
+  };
+  let count = document.querySelector('#count');
+  let pagesTitle = document.querySelector('#pageTitle')
+  let observer = new IntersectionObserver((entries, observer) => { 
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        console.log(entry.target.offsetTop)
+        if (entry.target.offsetTop > 4059) {
+          count.textContent= '05/05';
+          pagesTitle.textContent = 'Epilogue';
+        }
+        else if (entry.target.offsetTop > 3064) {
+          count.textContent= '04/05';
+          pagesTitle.textContent = 'Hobbies';
+        }
+        else if (entry.target.offsetTop > 2070) {
+          count.textContent= '03/05';
+          pagesTitle.textContent = 'Skills';
+        }
+        else if (entry.target.offsetTop > 1075) {
+          count.textContent= '02/05';
+          pagesTitle.textContent = 'Lore';
+        }
+        else if (entry.target.offsetTop < 1074) {
+          count.textContent= '01/05';
+          pagesTitle.textContent = 'The Beginning';
+        }
+      }
+    });
+  }, options);
+  document.querySelectorAll('.pages .main').forEach(p => { observer.observe(p) });
+}
