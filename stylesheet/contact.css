@@ -219,6 +219,10 @@ h1 {
   border-radius: 100px;
   background-color: black;
   transition: all 400ms;
+  -o-transition: all 400ms linear; /* opera */
+  -ms-transition: all 400ms linear; /* IE 10 */
+  -moz-transition: all 400ms linear; /* Firefox */
+  -webkit-transition: all 400ms linear; /*safari and chrome */
 }
 
 .footer .social-networks a:after {

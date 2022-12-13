@@ -45,6 +45,7 @@ function bottomText() {
   document.querySelector('.navfoot .footer-two').style.display = "block";
 }
 
+// IntersectionObserver
 if(!!window.IntersectionObserver){
   let n=1;
   const options = {
@@ -55,14 +56,13 @@ if(!!window.IntersectionObserver){
   let observer = new IntersectionObserver((entries, observer) => { 
     entries.forEach(entry => {
       if(entry.isIntersecting){
-        console.log(entry.target.offsetTop)
         if (entry.target.offsetTop > 4059) {
           count.textContent= '05/05';
           pagesTitle.textContent = 'Epilogue';
         }
         else if (entry.target.offsetTop > 3064) {
           count.textContent= '04/05';
-          pagesTitle.textContent = 'Hobbies';
+          pagesTitle.textContent = 'Interest';
         }
         else if (entry.target.offsetTop > 2070) {
           count.textContent= '03/05';
@@ -79,5 +79,22 @@ if(!!window.IntersectionObserver){
       }
     });
   }, options);
-  document.querySelectorAll('.pages .main').forEach(p => { observer.observe(p) });
+  document.querySelectorAll('.pages .header').forEach(p => { observer.observe(p) });
 }
+
+// Infinity carousel effect
+const gameButton = document.querySelector(".main4 .interestCarousel .game");
+const musicButton = document.querySelector(".main4 .interestCarousel .music");
+const socialButton = document.querySelector(".main4 .interestCarousel .social");
+
+gameButton.addEventListener('click', () => {
+  console.log("game click")
+});
+
+musicButton.addEventListener('click', () => {
+  console.log("music click")
+});
+
+socialButton.addEventListener('click', () => {
+  console.log("social click")
+});

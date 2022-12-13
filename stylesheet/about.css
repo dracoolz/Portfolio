@@ -28,9 +28,7 @@ body {
 }
 
 h4 {
-  position: sticky;
-  top: 5rem;
-  margin-left: 49%;
+  visibility: hidden;
 }
 
 /* === page-1 === */
@@ -204,6 +202,64 @@ h1 {
   bottom: 1rem;
   width: 100%;
   font-size: 1.1rem;
+}
+
+/* ===page-2=== */
+.main2 p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+}
+
+.main2 ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+/* ===page-4=== */
+.main4 .interestCarousel {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 6%;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.main4 .interestCarousel::-webkit-scrollbar  {
+  display: none;
+}
+
+.main4 .interestCarousel > button {
+  position: relative;
+  left: 4.5%;
+  font-family: 'Roboto Condesend', sans-serif;
+  font-size: 10.3rem;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  color: #adb5bd;
+  transition: color 200ms linear;
+  -o-transition: color 200ms linear; /* opera */
+  -ms-transition: color 200ms linear; /* IE 10 */
+  -moz-transition: color 200ms linear; /* Firefox */
+  -webkit-transition: color 200ms linear; /*safari and chrome */
+}
+
+.main4 .interestCarousel > button:hover {
+  cursor: pointer;
+  color: #6c757d;
+  transition: color 200ms linear;
+  -o-transition: color 200ms linear; /* opera */
+  -ms-transition: color 200ms linear; /* IE 10 */
+  -moz-transition: color 200ms linear; /* Firefox */
+  -webkit-transition: color 200ms linear; /*safari and chrome */
+}
+
+.main4 .interestCarousel > button:focus {
+  color: black;
 }
 
 /* === responsive === */
