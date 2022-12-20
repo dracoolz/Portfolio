@@ -84,17 +84,16 @@ if(!!window.IntersectionObserver){
 
 // Infinity carousel effect
 const gameButton = document.querySelector(".main4 .interestCarousel .game");
+const gameDetail = document.querySelector(".main .gaming");
 const musicButton = document.querySelector(".main4 .interestCarousel .music");
-const socialButton = document.querySelector(".main4 .interestCarousel .social");
+const musicDetail = document.querySelector(".main4 .music");
 
 gameButton.addEventListener('click', () => {
-  console.log("game click")
+  gameButton.style.color = "black";
+  musicButton.style.color = "#adb5bd";
 });
 
 musicButton.addEventListener('click', () => {
-  console.log("music click")
-});
-
-socialButton.addEventListener('click', () => {
-  console.log("social click")
+  gameButton.style.color = "#adb5bd";
+  musicButton.style.color = "black";
 });

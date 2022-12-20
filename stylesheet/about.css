@@ -46,6 +46,9 @@ h4 {
   top: 1.3rem;
   width: 100%;
   overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .navbar .home {
@@ -56,7 +59,7 @@ h4 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 2.7rem;
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -68,6 +71,7 @@ h4 {
 
 .navbar p {
   font-family: 'Oswald', sans-serif;
+  font-weight: 100;
   font-size: 1rem;
 }
 
@@ -217,12 +221,23 @@ h1 {
   list-style-type: none;
 }
 
+/* ===page-3=== */
+.page-3 .main3 h2 {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #ffffff;
+  mix-blend-mode: difference;
+  font-size: 5rem;
+  letter-spacing: 5px;
+}
+
 /* ===page-4=== */
 .main4 .interestCarousel {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 6%;
-  overflow-x: auto;
+  display: flex;
+  justify-content: space-evenly;
   max-width: 100%;
 }
 
@@ -231,10 +246,8 @@ h1 {
 }
 
 .main4 .interestCarousel > button {
-  position: relative;
-  left: 4.5%;
   font-family: 'Roboto Condesend', sans-serif;
-  font-size: 10.3rem;
+  font-size: 10rem;
   font-weight: 400;
   background-color: transparent;
   padding: 0;
@@ -250,7 +263,7 @@ h1 {
 
 .main4 .interestCarousel > button:hover {
   cursor: pointer;
-  color: #6c757d;
+  color: #6c757d !important;
   transition: color 200ms linear;
   -o-transition: color 200ms linear; /* opera */
   -ms-transition: color 200ms linear; /* IE 10 */
@@ -258,8 +271,32 @@ h1 {
   -webkit-transition: color 200ms linear; /*safari and chrome */
 }
 
-.main4 .interestCarousel > button:focus {
+.main4 .interestDetail {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 10px;
+  max-width: 100%;
+  margin-top: 3%;
+}
+
+.main4 .interestCarousel > button.active {
   color: black;
+}
+
+
+.main4 .interestDetail img {
+  grid-column: 3/ span 2;
+}
+
+.main4 .interestDetail .detailTitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.5rem;
+}
+
+.main4 .interestDetail p {
+  grid-column: 8/ span 4;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
 }
 
 /* === responsive === */
