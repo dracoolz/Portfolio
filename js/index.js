@@ -2,9 +2,9 @@
 window.onload = function () {
   setTimeout(navbarSection, 5300);
   setTimeout(mainTitle, 6200)
+  setTimeout(navurlSection, 6520)
   setTimeout(blackBar, 6780)
   setTimeout(blackToWhite, 6900)
-  setTimeout(navurlSection, 6520)
   setTimeout(bottomLeftRight, 7700)
   setTimeout(animationHead, 7700)
 }

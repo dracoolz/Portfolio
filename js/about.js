@@ -7,8 +7,8 @@ window.onload = function () {
   setTimeout(bottomText, 7700);
 }
 //Div will appeare after 1 sec the window is loaded fully
-function navbarSection() {
 //navbar section
+function navbarSection() {
   document.querySelector('.navbar .indonesia').style.animation = "slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.navbar .indonesia').style.display = "block";
   document.querySelector('.navbar .home').style.animation = "slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both";
@@ -45,6 +45,36 @@ function bottomText() {
   document.querySelector('.navfoot .footer-two').style.display = "block";
 }
 
+
+//main3 accordion effect
+const skillsAcc = document.querySelectorAll(".skills");
+
+skillsAcc.forEach((skill) => {
+  skill.addEventListener("click",() => {
+    skill.classList.toggle("active");
+  })
+})
+
+//main4 Infinity carousel effect
+const gameButton = document.querySelector(".main4 .interestCarousel .game");
+const gameDetailButton = document.querySelector(".main4 .gamingDetail");
+const musicButton = document.querySelector(".main4 .interestCarousel .music");
+const musicDetailButton = document.querySelector(".main4 .musicDetail");
+
+gameButton.addEventListener('click', () => {
+  gameButton.style.color = "black";
+  musicButton.style.color = null;
+  gameDetailButton.style.display = null;
+  musicDetailButton.style.display = "none";
+});
+
+musicButton.addEventListener('click', () => {
+  gameButton.style.color = null;
+  musicButton.style.color = "black";
+  gameDetailButton.style.display = "none";
+  musicDetailButton.style.display = "flex";
+});
+
 // IntersectionObserver
 if(!!window.IntersectionObserver){
   let n=1;
@@ -56,6 +86,7 @@ if(!!window.IntersectionObserver){
   let observer = new IntersectionObserver((entries, observer) => { 
     entries.forEach(entry => {
       if(entry.isIntersecting){
+        console.log(entry.target.offsetTop)
         if (entry.target.offsetTop > 4059) {
           count.textContent= '05/05';
           pagesTitle.textContent = 'Epilogue';
@@ -82,18 +113,3 @@ if(!!window.IntersectionObserver){
   document.querySelectorAll('.pages .header').forEach(p => { observer.observe(p) });
 }
 
-// Infinity carousel effect
-const gameButton = document.querySelector(".main4 .interestCarousel .game");
-const gameDetail = document.querySelector(".main .gaming");
-const musicButton = document.querySelector(".main4 .interestCarousel .music");
-const musicDetail = document.querySelector(".main4 .music");
-
-gameButton.addEventListener('click', () => {
-  gameButton.style.color = "black";
-  musicButton.style.color = "#adb5bd";
-});
-
-musicButton.addEventListener('click', () => {
-  gameButton.style.color = "#adb5bd";
-  musicButton.style.color = "black";
-});

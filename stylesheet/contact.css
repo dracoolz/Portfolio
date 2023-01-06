@@ -35,6 +35,9 @@ body {
   top: 1.3rem;
   width: 100%;
   overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  mix-blend-mode: difference;
 }
 
 .navbar .home {
@@ -43,9 +46,9 @@ body {
 
 .navbar .home a {
   font-family: 'Oswald', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 2.7rem;
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 
@@ -55,8 +58,10 @@ body {
   font-size: 0.7rem;
 }
 
-.navbar p {
+.navbar .indonesia p,
+.navbar .porto p {
   font-family: 'Oswald', sans-serif;
+  font-weight: 100;
   font-size: 1rem;
 }
 
