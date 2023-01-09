@@ -217,6 +217,15 @@ h1 {
 }
 
 /* ===page-2=== */
+.page-2 .header {
+  margin-left: 5%;
+}
+
+.page-2 .header p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
 .main2 {
   display: flex;
   justify-content: flex-start;
@@ -243,7 +252,7 @@ h1 {
   font-size: 6rem;
   font-weight: 600;
   max-width: 40vw;
-  margin-bottom: 15%;
+  margin-bottom: 7%;
 }
 
 .main2 p {
@@ -260,6 +269,26 @@ h1 {
 }
 
 /* ===page-3=== */
+.page-3 .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6%;
+  margin-left: 5%;
+  margin-bottom: 4%;
+}
+
+.page-3 .header p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
+.page-3 .header h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
 .page-3 {
   margin-bottom: 5%;
 }
@@ -340,6 +369,26 @@ img {
 }
 
 /* ===page-4=== */
+.page-4 .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6%;
+  margin-left: 5%;
+  margin-bottom: 4%;
+}
+
+.page-4 .header p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
+.page-4 .header h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
 .main4 .interestCarousel {
   display: flex;
   align-items: center;
@@ -416,8 +465,13 @@ img {
 }
 
 /* ===page-5=== */
-.page-5 {
-  background-color: black;
+.page-5 .header {
+  margin-left: 5%;
+}
+
+.page-5 .header p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem;
 }
 
 .main5 {
@@ -432,7 +486,6 @@ img {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 7rem;
   font-weight: 500;
-  color: white;
   margin-bottom: 1%;
 }
 
@@ -440,7 +493,6 @@ img {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 5rem;
   font-weight: 300;
-  color: white;
   margin-bottom: 10%;
 }
 
@@ -450,13 +502,13 @@ img {
   font-size:3.5rem;
   text-transform:uppercase;
   position:relative;
-  color:#adb5bd;
+  color:#6c757d;
 }
 
 .main5 a:before {
   content:"H͟E͟L͟L͟O͟@͟K͟I͟D͟A͟D͟I͟T͟Y͟A͟V͟I͟N͟S͟C͟E͟N͟T͟.͟C͟O͟M͟";
   position:absolute;
-  color:white;
+  color:black;
   top:0;
   left:0;
   width:0%;
