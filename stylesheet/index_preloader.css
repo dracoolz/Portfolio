@@ -67,3 +67,58 @@
   transition: 1s;
   pointer-events: none;
 }
+
+/* media query */
+@media (max-width: 1200px) {
+  .preloader::before {
+    font-size: 2rem;
+  }
+
+  .preloader::after {
+    font-size: 2rem;
+  }
+
+  .counter {
+    font-size: 10rem;
+  }
+
+  .counter::after {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .preloader::before {
+    font-size: 1.6rem;
+  }
+
+  .preloader::after {
+    font-size: 1.6rem;
+  }
+
+  .counter {
+    font-size: 8rem;
+  }
+
+  .counter::after {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .preloader::before {
+    font-size: 1rem;
+  }
+
+  .preloader::after {
+    font-size: 1rem;
+  }
+
+  .counter {
+    font-size: 6rem;
+  }
+
+  .counter::after {
+    font-size: 1.5rem;
+  }
+}
