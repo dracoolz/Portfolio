@@ -1,3 +1,9 @@
+:root {
+  --fs-600: 2.5rem;
+  --fs-num: 12rem;
+  --fs-percentage: 5.5rem;
+}
+
 /* preloader section*/
 .preloader {
   position: fixed;
@@ -17,7 +23,7 @@
   top: 3%;
   left: 1%;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 2.5rem;
+  font-size: var(--fs-600);
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
@@ -30,7 +36,7 @@
   top: 9%;
   left: 1%;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 2.5rem;
+  font-size: var(--fs-600);
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 1);
@@ -51,14 +57,14 @@
   background-color: #070707;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 100;
-  font-size: 12rem;
+  font-size: var(--fs-num);
   font-size: 600;
   z-index: 1;
 }
 
 .counter::after {
   content: '%';
-  font-size: 5.5rem;
+  font-size: var(--fs-percentage);
   margin-right: 2vw;
 }
 
@@ -70,55 +76,41 @@
 
 /* media query */
 @media (max-width: 1200px) {
-  .preloader::before {
-    font-size: 2rem;
+  :root {
+    --fs-600: 2rem;
+    --fs-num: 10rem;
+    --fs-percentage: 5rem;
   }
+}
 
-  .preloader::after {
-    font-size: 2rem;
-  }
-
-  .counter {
-    font-size: 10rem;
-  }
-
-  .counter::after {
-    font-size: 5rem;
+@media (max-width: 1024px) {
+  :root {
+    --fs-600: 1.8rem;
+    --fs-num: 9rem;
+    --fs-percentage: 4rem;
   }
 }
 
 @media (max-width: 768px) {
-  .preloader::before {
-    font-size: 1.6rem;
+  :root {
+    --fs-600: 1.6rem;
+    --fs-num: 8rem;
+    --fs-percentage: 3rem;
   }
 
   .preloader::after {
-    font-size: 1.6rem;
-  }
-
-  .counter {
-    font-size: 8rem;
-  }
-
-  .counter::after {
-    font-size: 3rem;
+    top: 7%;
   }
 }
 
 @media (max-width: 480px) {
-  .preloader::before {
-    font-size: 1rem;
+  :root {
+    --fs-600: 1rem;
+    --fs-num: 6rem;
+    --fs-percentage: 3rem;
   }
 
   .preloader::after {
-    font-size: 1rem;
-  }
-
-  .counter {
-    font-size: 6rem;
-  }
-
-  .counter::after {
-    font-size: 1.5rem;
+    top: 5%;
   }
 }
