@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
 :root {
-  --fs-h1: clamp(3rem, 5vw, 10rem);
+  --fs-h1: clamp(5rem, 5vw, 10rem);
   --fs-li: 1rem;
   --fs-navfoot: 1.7rem;
   --fs-500: 2.3rem;
-  --fs-300: 2.3rem;
+  --fs-300: 2.7rem;
   --fs-200: 1rem;
   --fs-100: 1rem;
 }
@@ -210,12 +210,17 @@ ul.navfoot {
 
 @media (max-width: 1024px) {
   :root {
+    --fs-h1: 4.5rem;
     --fs-li: .7rem;
-    --fs-navfoot: 1.5rem;
-    --fs-500: 2rem;
+    --fs-navfoot: 1rem;
+    --fs-500: 1.4rem;
     --fs-300: 2rem;
     --fs-200: .8rem;
     --fs-100: .8rem;
+  }
+
+  h1 {
+    line-height: 100px;
   }
 
   ul.navfoot {
@@ -226,6 +231,7 @@ ul.navfoot {
 /* 768px */
 @media (max-width: 768px) {
   :root {
+    --fs-h1: 4rem;
     --fs-li: .8rem;
     --fs-navfoot: 1.6rem;
     --fs-500: 2rem;
@@ -279,6 +285,7 @@ ul.navfoot {
 /* 480px */
 @media (max-width: 480px) {
   :root {
+    --fs-h1: 3rem;
     --fs-li: .7rem;
     --fs-navfoot: 1.3rem;
     --fs-500: 1.9rem;
