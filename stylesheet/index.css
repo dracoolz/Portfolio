@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
 :root {
-  --fs-h1: clamp(3rem, 6.5vw, 10rem);
+  --fs-h1: clamp(3rem, 5vw, 10rem);
   --fs-li: 1rem;
   --fs-navfoot: 1.7rem;
   --fs-500: 2.3rem;
