@@ -285,7 +285,6 @@ ul.navfoot {
 /* 480px */
 @media (max-width: 480px) {
   :root {
-    --fs-h1: 3rem;
     --fs-li: .7rem;
     --fs-navfoot: 1.3rem;
     --fs-500: 1.9rem;

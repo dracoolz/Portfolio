@@ -39,8 +39,14 @@ function navurlSection() {
 }
 
 function bottomIcons() {
-  document.querySelector('.navfoot .footer-one').style.animation = "opacity-slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
-  document.querySelector('.navfoot .footer-two').style.animation = "opacity-slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both";
-  document.querySelector('.navfoot .footer-three').style.animation = "opacity-slide-up 2.5s cubic-bezier(0.65, 0, 0.35, 1) both";
-  document.querySelector('.navfoot .footer-four').style.animation = "opacity-slide-up 3s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.footer-one').style.animation = "opacity-slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.footer-two').style.animation = "opacity-slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.footer-three').style.animation = "opacity-slide-up 2.5s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.footer-four').style.animation = "opacity-slide-up 3s cubic-bezier(0.65, 0, 0.35, 1) both";
+  
+  // Mobile
+  document.querySelector('.mobileNav .footer-one').style.animation = "opacity-slide-up 1s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.mobileNav .footer-two').style.animation = "opacity-slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.mobileNav .footer-three').style.animation = "opacity-slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both";
+  document.querySelector('.mobileNav .footer-four').style.animation = "opacity-slide-up 2.5s cubic-bezier(0.65, 0, 0.35, 1) both";
 }
