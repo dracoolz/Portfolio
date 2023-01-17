@@ -153,8 +153,8 @@ h1 {
 
 .navurl .build p {
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  font-size: var(--fs-200);
+  font-weight: 100;
+  font-size: var(--fs-100);
 }
 
 /* footer */

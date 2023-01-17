@@ -2,6 +2,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
 
+:root {
+  /* pages font */
+  --fs-h1: clamp(5rem, 8rem, 10rem);
+  --pages: 2rem;
+  --fs-li: 1rem;
+  --fs-600: 6rem;
+  --fs-500: 2.3rem;
+  --fs-300: 2.7rem;
+  --fs-400: 2rem;
+  --fs-200: 1rem;
+  --fs-100: 1rem;
+  
+  /* page-3 */
+  --fs-question: 2rem;
+  --fs-answer: 1.5rem;
+  
+  /* page-4 */
+  --fs-btnTitle: 10rem;
+  --fs-detail: 2.5rem;
+  
+  /* page-5 */
+  --fs-main5: 6rem;
+  --fs-second5: 4rem;
+  --fs-url: 3rem;
+}
 
 @font-face {
     font-family: "icomoon";
@@ -21,7 +46,7 @@ body {
   background-color: #e5e5e5;
 }
 
-/* === page === */
+/* === pages === */
 .pages {
   width: 100%;
   height: 100vh;
@@ -31,7 +56,7 @@ h4 {
   opacity: 0;
   margin-left: 2%;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2rem;
+  font-size: var(--pages);
 }
 
 /* === page-1 === */
@@ -61,7 +86,7 @@ h4 {
 .navbar .home a {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
-  font-size: 2.7rem;
+  font-size: var(--fs-300);
   color: inherit;
   text-decoration: none;
 }
@@ -76,7 +101,7 @@ h4 {
 .navbar .porto p {
   font-family: 'Oswald', sans-serif;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: var(--fs-100);
 }
 
 .navbar .indonesia {
@@ -97,7 +122,7 @@ h4 {
 
 h1 {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 8rem;
+  font-size: var(--fs-h1);
   line-height: 120px;
   font-weight: 600;
   font-style: italic;
@@ -138,13 +163,13 @@ h1 {
 
 .navurl li {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1rem;
+  font-size: var(--fs-li);
   color: white;
 }
 
 .navurl li a {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2.3rem;
+  font-size: var(--fs-500);
   font-weight: 500;
   position: relative;
   color: white;
@@ -171,8 +196,8 @@ h1 {
 
 .navurl .build p {
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
-  font-size: .8vw;
+  font-weight: 100;
+  font-size: var(--fs-100);
 }
 
 /* footer */
@@ -194,26 +219,15 @@ h1 {
   overflow: hidden;
 }
 
-.navfoot .footer-one,
-.navfoot .footer-two {
+.navfoot .footer-one {
   text-align: center;
   display: none;
 }
 
-.navfoot > li {
+.navfoot li {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2rem;
-}
-
-.navfoot .footer-two {
-  position: fixed;
-  bottom: 1rem;
-  width: 100%;
-  font-size: 1.1rem;
-  font-weight: 200;
-  z-index: 1;
-  color: #fff;
-  mix-blend-mode: difference;
+  font-weight: 400;
+  font-size: var(--fs-400);
 }
 
 /* ===page-2=== */
@@ -223,7 +237,7 @@ h1 {
 
 .page-2 .header p {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--pages);
 }
 
 .main2 {
@@ -249,7 +263,7 @@ h1 {
 
 .main2 h2 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 6rem;
+  font-size: var(--fs-600);
   font-weight: 600;
   max-width: 40vw;
   margin-bottom: 7%;
@@ -257,15 +271,11 @@ h1 {
 
 .main2 p {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.5rem;
+  font-weight: 400;
+  font-size: var(--fs-400);
   max-width: 40vw;
   overflow-wrap: break-word;
   margin-bottom: 5%;
-}
-
-.main2 .progammer {
-  height: 300px;
-  width: 300px;
 }
 
 /* ===page-3=== */
@@ -280,13 +290,13 @@ h1 {
 
 .page-3 .header p {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--pages);
 }
 
 .page-3 .header h2 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 4rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: var(--fs-600);
 }
 
 .page-3 {
@@ -297,8 +307,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  gap: 20vw;
+  justify-content: space-evenly;
   min-height: 100vh;
   width: 100%;
   margin: 0 auto;
@@ -307,7 +316,7 @@ h1 {
 .title {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: var(--fs-500);
   margin: 2rem 0;
   max-width: 500px;
   overflow-wrap: break-word;
@@ -335,7 +344,8 @@ h1 {
 
 .question h3 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.8rem;
+  font-weight: 600;
+  font-size: var(--fs-question);
 }
 
 .question img {
@@ -352,7 +362,7 @@ h1 {
   font-family: 'Roboto Condensed', sans-serif;
   padding-top: 1rem;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: var(--fs-answer);
 }
 
 .skills.active .answer {
@@ -380,13 +390,13 @@ img {
 
 .page-4 .header p {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--pages);
 }
 
 .page-4 .header h2 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 4rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: var(--fs-600);
 }
 
 .main4 .interestCarousel {
@@ -402,7 +412,7 @@ img {
 
 .main4 .interestCarousel > button {
   font-family: 'Roboto Condesend', sans-serif;
-  font-size: 10rem;
+  font-size: var(--fs-btnTitle);
   font-weight: 400;
   background-color: transparent;
   padding: 0;
@@ -445,7 +455,7 @@ img {
 
 .main4 .interestDetail .detailTitle {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2.5rem;
+  font-size: var(--fs-detail);
 }
 
 .main4 .interestDetail p {
@@ -484,22 +494,22 @@ img {
 
 .main5 h2 {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 7rem;
-  font-weight: 500;
+  font-size: var(--fs-main5);
+  font-weight: 600;
   margin-bottom: 1%;
 }
 
-.main5 h3 {
+.main5 p {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 5rem;
-  font-weight: 300;
+  font-size: var(--fs-second5);
+  font-weight: 500;
   margin-bottom: 10%;
 }
 
 .main5 a {
   margin:0;
   padding:0;
-  font-size:3.5rem;
+  font-size:var(--fs-url);
   text-transform:uppercase;
   position:relative;
   color:#6c757d;
