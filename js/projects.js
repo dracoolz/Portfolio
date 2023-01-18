@@ -6,6 +6,7 @@ window.onload = function () {
   setTimeout(navurlSection, 6520);
   setTimeout(bottomText, 7700);
   setTimeout(showRoomItems, 8000);
+  setTimeout(visiblity, 8000);
 }
 //Div will appeare after 1 sec the window is loaded fully
 function navbarSection() {
@@ -44,6 +45,10 @@ function bottomText() {
   document.querySelector('.navfoot .footer-one').style.display = "block";
   document.querySelector('.navfoot .footer-two').style.animation = "slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.navfoot .footer-two').style.display = "block";
+}
+
+function visiblity() {
+  document.querySelector('.title1').style.overflow = "visible";
 }
 
 function showRoomItems() {

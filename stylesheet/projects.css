@@ -5,6 +5,7 @@
 :root {
   --fs-h1: clamp(5rem, 8rem, 10rem);
   --fs-li: 1rem;
+  --fs-navfoot: 2rem;
   --fs-500: 2.3rem;
   --fs-300: 2.7rem;
   --fs-200: 1rem;
@@ -24,16 +25,15 @@ body {
   background-color: #e5e5e5;
 }
 
-/* === header section === */
-.header {
+/* header section */
+header {
   z-index: 1;
 }
 
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 41.5%;
   position: fixed;
   top: 1.3rem;
   width: 100%;
@@ -177,7 +177,7 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 130px;
+  gap: 8rem;
   width: 100%;
   list-style-type: none;
   overflow: hidden;
@@ -190,12 +190,14 @@ h1 {
 }
 
 .navfoot .footer-two img {
-    transform: rotate(-0.25turn);
+  height: auto;
+  max-width: 100%;
+  transform: rotate(-0.25turn);
 }
 
 .navfoot > li {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 2rem;
+  font-size: var(--fs-navfoot);
 }
 
 /* === showroom section === */
@@ -241,6 +243,18 @@ h3 {
 /* === responsive === */
 /* 1200px */
 @media (max-width: 1200px) {
+  :root {
+    --fs-li: .8rem;
+    --fs-navfoot: 1.7rem;
+    --fs-500: 2.1rem;
+    --fs-300: 2rem;
+    --fs-200: .9rem;
+    --fs-100: .9rem;
+    /* showroom */
+    --sr-h3: 1.8rem;
+    --sr-p: 1.1rem;
+  }
+
   .showroom {
     columns: 3;
     width: calc(100% - 40px);
@@ -249,8 +263,63 @@ h3 {
   }
 }
 
+/* 1024px */
+@media (max-width: 1024px) {
+  :root {
+    --fs-h1: 5rem;
+    --fs-li: .7rem;
+    --fs-navfoot: 1.6rem;
+    --fs-500: 1.7rem;
+    --fs-300: 2rem;
+    --fs-200: .8rem;
+    --fs-100: .8rem;
+  }
+
+  .footer {
+    margin-top: 17rem;
+  }
+
+  .footer > ul.navfoot {
+    gap: 8rem;
+  }
+}
+
 /* 768px */
 @media (max-width: 768px) {
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar .porto p,
+  .navbar .indonesia p {
+    display: none;
+  }
+
+  .navbar .porto .minibar {
+    display: flex;
+  }
+
+  .navurl {
+    background: #e5e5e5;
+  }
+
+  .navurl li {
+    opacity: 0;
+  }
+
+  .navurl li a,
+  .navurl li p {
+    display: none;
+  }
+
+  .footer {
+    margin-top: 12rem;
+  }
+
+  .footer > ul.navfoot {
+    gap: 17rem;
+  }
+
   .showroom {
     columns: 2;
   }
@@ -258,6 +327,14 @@ h3 {
 
 /* 480px */
 @media (max-width: 480px) {
+  :root {
+    --fs-navfoot: 1.2rem;
+  }
+
+  .footer > ul.navfoot {
+    gap: 20rem;
+  }
+
   .showroom {
     columns: 1;
   }

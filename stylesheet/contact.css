@@ -312,7 +312,7 @@ h1 {
 
 @media (max-width: 1024px) {
   :root {
-    --fs-h1: 4.5rem;
+    --fs-h1: 5rem;
     --fs-li: .7rem;
     --fs-500: 1.4rem;
     --fs-300: 2rem;
