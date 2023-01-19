@@ -403,7 +403,6 @@ h3 {
 
 .show {
   opacity: 1;
-  transition: opacity 0.25s ease-in;
 }
 
 /* ==== scrollbar ==== */

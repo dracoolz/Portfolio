@@ -74,3 +74,19 @@ musicButton.addEventListener('click', () => {
   gameDetailButton.style.display = "none";
   musicDetailButton.style.display = "flex";
 });
+
+// === paralax effect ===
+const hiddenBox = document.querySelectorAll('.hidden');
+const appearOption = { 
+  threshold: 0.5
+};
+
+const Observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  })
+}, appearOption);
+
+hiddenBox.forEach(el => Observer.observe(el));
