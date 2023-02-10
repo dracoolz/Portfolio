@@ -286,6 +286,10 @@ h3 {
 
 /* 768px */
 @media (max-width: 768px) {
+  :root {
+   --fs-h1: 4rem;
+  }
+
   .navbar {
     justify-content: center;
   }

@@ -41,8 +41,6 @@ function navurlSection() {
 function bottomText() {
   document.querySelector('.navfoot .footer-one').style.animation = "opacity-slide-up 1.5s cubic-bezier(0.65, 0, 0.35, 1) both";
   document.querySelector('.navfoot .footer-one').style.display = "block";
-  document.querySelector('.navfoot .footer-two').style.animation = "slide-up 2s cubic-bezier(0.65, 0, 0.35, 1) both";
-  document.querySelector('.navfoot .footer-two').style.display = "block";
 }
 
 
