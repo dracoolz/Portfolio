@@ -208,6 +208,7 @@ h3 {
 }
 
 .showroom {
+  height: 91.5vh;
   width: 100%;
   margin: 2em auto;
   columns: 4;
@@ -226,6 +227,16 @@ h3 {
 
 .showroom .box img {
   max-width: 100%;
+  border-radius: 0%;
+  transition: all 0.4s ease;
+}
+
+.showroom .box img:hover,
+.showroom .box img:active {
+  cursor: pointer;
+  border-radius: 5%;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+  transition: all 0.4s ease;
 }
 
 .showroom .box .showroomTitle {
@@ -238,6 +249,13 @@ h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: var(--sr-p);
   font-weight: 200;
+}
+
+/* bottom section */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* === responsive === */
@@ -402,7 +420,7 @@ h3 {
 /* showroom */
 .hidden {
   opacity: 0;
-  transition: opacity 0.25s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .show {
